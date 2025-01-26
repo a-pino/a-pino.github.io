@@ -2,6 +2,7 @@
 title: "My Undergraduate Thesis"
 aliases:
   - /files/thesis
+draft: false
 ---
 
 # Using Topology to Extract Insights from UAAP Basketball Data
