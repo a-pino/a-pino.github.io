@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alexander Pino</title>
+    <link>https://a-pino.github.io/</link>
+    <description>Recent content on Alexander Pino</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://a-pino.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Undergraduate Thesis</title>
+      <link>https://a-pino.github.io/files/thesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://a-pino.github.io/files/thesis/</guid>
+      <description>&lt;h1 id=&#34;using-topology-to-extract-insights-from-uaap-basketball-data&#34;&gt;Using Topology to Extract Insights from UAAP Basketball Data&lt;/h1&gt;&#xA;&lt;p&gt;Authors: Benjamin Louis Ang, Alexander Pino Jr., Dane Lauren Rosario&lt;/p&gt;&#xA;&lt;h3 id=&#34;full-manuscript&#34;&gt;Full manuscript&lt;/h3&gt;&#xA;&lt;p&gt;Click &lt;a href=&#34;https://a-pino.github.io/files/Ang_Pino_Rosario_Manuscript_430.pdf&#34;&gt;here&lt;/a&gt; to read the paper in full.&lt;/p&gt;&#xA;&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;&#xA;&lt;p&gt;Basketball is one of the most popular team sports, whose many compet-&#xA;itive, well-organized and well-recorded leagues provide rich sources of data&#xA;frequently used to analyze tactics, strategy, player performance and team&#xA;composition. A consequence of basketball’s team dynamics, comprising five&#xA;active players per team on the court who may be replaced by substitute&#xA;players on many occasions per game, is the formation of archetypes; players&#xA;are categorized into positions based on roles they play, such as point-scoring,&#xA;rebounding or defense. However, the evolution of game strategy has meant&#xA;that the three traditional positions, namely—guard, forward, and center, are&#xA;no longer sufficient to completely describe roles of players within the team.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
