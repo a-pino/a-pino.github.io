@@ -1,0 +1,13 @@
+baseURL: 'https://a-pino.github.io/'
+languageCode: 'en-us'
+title: 'Alexander Pino'
+theme: 'zen'
+
+params:
+    author:
+        name: 'Alexander Pino'
+        email: 'alex.pino.salig@gmail.com'
+        github: 'a-pino'
+        linkedin: 'alexander-j-pino'
+    logoWidth: 64
+    logoHeight: 64

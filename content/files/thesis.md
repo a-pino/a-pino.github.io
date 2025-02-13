@@ -1,5 +1,5 @@
 ---
-title: "My Undergraduate Thesis"
+title: "Undergraduate Thesis - Topological Data Analysis"
 aliases:
   - /files/thesis
 draft: false
