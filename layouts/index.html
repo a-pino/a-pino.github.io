@@ -2,13 +2,14 @@
 
 {{ define "main" -}}
 <main class="main layout__main">
-{{ .Content }}
-
-<!-- Personal Introduction Section -->
+<!-- Home hero image (uses favicon.svg) -->
 <section id="introduction" class="section">
-  <h2>Personal Introduction</h2>
-  <p>Welcome to my portfolio. I am Alexander Pino, a [your profession]. [Add your introduction here].</p>
+  <div class="intro-content">
+    <div class="intro-favicon" aria-hidden="true"></div>
+  </div>
 </section>
+
+{{ .Content }}
 
 <!-- Blog Sections -->
 <section id="blog" class="section">

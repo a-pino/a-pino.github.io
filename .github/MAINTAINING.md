@@ -87,16 +87,39 @@ Use tools like:
 - Check front matter in content files
 - Ensure all required parameters are set in `hugo.yaml`
 
-## Best Practices
+## Troubleshooting
 
-- Use descriptive commit messages
-- Test locally before deploying
-- Keep themes as submodules for easy updates
-- Use Hugo's built-in features (shortcodes, partials) for reusability
-- Optimize images and assets for web
+### Why Changes Don't Show Up
+If your changes aren't appearing on the site, check these common issues:
 
-## Resources
+1. **Browser Cache**: Browsers cache CSS and JS. Do a hard refresh (Ctrl+F5 or Cmd+Shift+R) or clear cache.
 
-- [Hugo Documentation](https://gohugo.io/documentation/)
-- [Ananke Theme Docs](https://github.com/theNewDynamic/gohugo-theme-ananke)
-- [Hugo Community](https://discourse.gohugo.io/)
+2. **Hugo Server Not Rebuilding**: If using `hugo server`, it should auto-rebuild, but sometimes restart it. Run `hugo server --disableFastRender` for full rebuilds.
+
+3. **Build Errors**: Run `hugo` to build and check for errors. Fix any YAML or syntax issues.
+
+4. **File Locations**: Ensure edits are in the correct files:
+   - Theme overrides: `layouts/`, `assets/`
+   - Content: `content/`
+   - Config: `hugo.yaml`
+
+5. **Asset Compilation**: SASS changes need `hugo` rebuild. Check `public/css/styles.css` for your changes.
+
+6. **Git Status**: If using git, check if files are committed and pushed (for GitHub Pages).
+
+7. **Theme Submodules**: If modifying theme files, changes may be overwritten on update. Use overrides in root instead.
+
+8. **Console Errors**: Check browser console for JS errors, and Hugo output for build errors.
+
+If issues persist, run `hugo --debug` for detailed output.
+
+## Custom Features
+
+### Sidebar
+- **Location**: `layouts/partials/sidebar.html`
+- **Styling**: `assets/_custom.scss` (search for `.sidebar.layout__second-sidebar`)
+- **JavaScript**: `layouts/partials/scripts.html` (dark mode toggle script)
+- **Modifications**:
+  - To make dark mode toggle classier: Edit the button styling in `assets/_custom.scss` under `#theme-toggle`
+  - To add table of contents: In `layouts/partials/sidebar.html`, add `{{ .TableOfContents }}` inside a conditional for single pages (e.g., `{{ if .IsPage }}{{ .TableOfContents }}{{ end }}`)
+  - Sidebar is hidden on screens narrower than 1200px; adjust in `assets/_custom.scss`
