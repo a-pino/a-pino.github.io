@@ -1,24 +1,34 @@
 // stylelint-disable scss/dollar-variable-colon-space-after, scss/dollar-variable-empty-line-before
 
 // Base colors.
-$black:                 #000;
-$nearblack:             lighten($black, 20%); // #333
-$grey-dark:             lighten($black, 40%); // #666
-$grey:                  lighten($black, 60%); // #999
-$grey-light:            lighten($black, 80%); // #ccc
-$grey-extra-light:      lighten($black, 93.33%); // #eee
-$nearwhite:             lighten($black, 97%); // #f7f7f7
-$white:                 #fff;
+$black:                 #3e2723; // Dark brown
+$nearblack:             lighten($black, 20%); // Adjusted
+$grey-dark:             lighten($black, 40%);
+$grey:                  lighten($black, 60%);
+$grey-light:            lighten($black, 80%);
+$grey-extra-light:      lighten($black, 93.33%);
+$nearwhite:             lighten($black, 97%);
+$white:                 #f5f5dc; // Beige
 
 $blue:                  #0072b9;
 $red:                   #c00;
 $green:                 #43a808;
 $yellow:                #fd0;
 
-$brand:                 $grey-dark;
-$brand-alt:             $grey;
-$brand-light:           $grey-light;
-$brand-dark:            $nearblack;
+$brand:                 #d2b48c; // Tan/beige
+$brand-alt:             lighten($brand, 10%);
+$brand-light:           lighten($brand, 20%);
+$brand-dark:            darken($brand, 20%);
+
+$blue:                  #0072b9;
+$red:                   #c00;
+$green:                 #43a808;
+$yellow:                #fd0;
+
+$brand:                 #d2b48c; // Tan/beige
+$brand-alt:             lighten($brand, 10%);
+$brand-light:           lighten($brand, 20%);
+$brand-dark:            darken($brand, 20%);
 
 // Colour map.
 $colors: (
@@ -28,7 +38,7 @@ $colors: (
   brand-dark:             $brand-dark,
 
   text:                   $black,
-  text-bg:                $white,
+  text-bg:                #fafafa,  // Lighter shade for content
   text-meta:              $grey-dark,
 
   link:                   $brand-dark,
@@ -36,9 +46,9 @@ $colors: (
   link-hover:             $brand,
   link-active:            $red,
 
-  link-inverted:          $white,
-  link-visited-inverted:  $white,
-  link-hover-inverted:    $white,
+  link-inverted:          $nearblack,
+  link-visited-inverted:  $nearblack,
+  link-hover-inverted:    $nearblack,
   link-active-inverted:   $red,
 
   border:                 $brand,
@@ -50,10 +60,10 @@ $colors: (
   autocomplete-select:    $white,
   autocomplete-select-bg: $blue,
 
-  body-bg:                $white,
-  header-bg:              $white,
-  footer-bg:              $white,
-  backdrop:               $grey-extra-light,
+  body-bg:                #fafafa,  // Lighter for content
+  header-bg:              $nearblack,  // Darker background for header
+  footer-bg:              #f5f5dc,
+  backdrop:               #f5f5dc,  // Beige for margins
 
   mobile-menu:            $brand,
   mobile-menu-cover:      rgba($black, .2),

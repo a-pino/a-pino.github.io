@@ -3,6 +3,7 @@ title: "Undergraduate Thesis - Topological Data Analysis"
 aliases:
   - /files/thesis
 draft: false
+category: research
 ---
 
 # Using Topology to Extract Insights from UAAP Basketball Data

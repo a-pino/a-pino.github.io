@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="nojs" lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Undergraduate Thesis - Topological Data Analysis – Alexander Pino</title>
+
+<meta name="created" content="0001-01-01T00:00:00+0000">
+<meta name="modified" content="0001-01-01T00:00:00+0000">
+<meta name="author" content="Alexander Pino">
+
+<meta property="og:site_name" content="Alexander Pino">
+<meta property="og:title" content="Undergraduate Thesis - Topological Data Analysis">
+<meta property="og:url" content="http://localhost:1313/research/thesis/">
+<meta property="og:type" content="article">
+
+<meta name="generator" content="Hugo 0.152.2">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="canonical" href="http://localhost:1313/research/thesis/">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/print.css" media="print">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "Undergraduate Thesis - Topological Data Analysis",
+    "datePublished": "0001-01-01T00:00:00Z",
+    "dateModified": "0001-01-01T00:00:00Z",
+    "url" : "http://localhost:1313/research/thesis/",
+    
+    "author": {
+      "@type": "Person",
+      "name": "Alexander Pino"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://localhost:1313/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Alexander Pino",
+      "url": "http://localhost:1313/"
+    }
+  }
+</script>
+
+<script src="/js/script-early.13eca1c44b48885517a4dc79e153a2da63e3825a7a37c271c88558877cb570b5.js"></script>
+
+<script defer src="/js/script.5ed52cdd956021fd7194109b25dbc5cbe93a1085461b9f29b1284df94c19481c.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('theme-toggle');
+  if (toggle) {
+    
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark', currentTheme === 'dark');
+    toggle.textContent = currentTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+
+    toggle.addEventListener('click', function() {
+      const isDark = document.body.classList.toggle('dark');
+      const newTheme = isDark ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+      toggle.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  }
+});
+</script>
+
+
+
+</head>
+
+<body class="single-page">
+<div class="page layout__page layout__sidebar-second">
+<header class="header layout__header">
+<a href="/" title="Home" rel="home" class="header__logo">
+<img src="/images/logo.png" width="64" height="64" alt="Home" class="header__logo-image">
+</a>
+<h1 class="header__site-name">
+<a href="/" title="Home" class="header__site-link" rel="home"><span>Alexander Pino</span></a>
+</h1>
+<div class="region header__region">
+<nav class="main-menu" aria-label="Main menu">
+<ul class="navbar">
+<li><a href="/contact/"><span>Contact</span></a></li>
+<li><a href="/dev/"><span>Dev</span></a></li>
+<li><a href="/"><span>Home</span></a></li>
+<li><a href="/research/"><span>Research</span></a></li>
+<li><a href="/resume"><span>Resume/CV</span></a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="main layout__main">
+<article class="single-view single-view--research">
+<header>
+<h1 class="title">Undergraduate Thesis - Topological Data Analysis</h1>
+</header>
+
+<h1 id="using-topology-to-extract-insights-from-uaap-basketball-data">Using Topology to Extract Insights from UAAP Basketball Data</h1>
+<p>Authors: Benjamin Louis Ang, Alexander Pino Jr., Dane Lauren Rosario</p>
+<h3 id="full-manuscript">Full manuscript</h3>
+<p>Click <a href="/files/Ang_Pino_Rosario_Manuscript_430.pdf">here</a> to read the paper in full.</p>
+<h3 id="abstract">Abstract</h3>
+<p>Basketball is one of the most popular team sports, whose many compet-
+itive, well-organized and well-recorded leagues provide rich sources of data
+frequently used to analyze tactics, strategy, player performance and team
+composition. A consequence of basketball’s team dynamics, comprising five
+active players per team on the court who may be replaced by substitute
+players on many occasions per game, is the formation of archetypes; players
+are categorized into positions based on roles they play, such as point-scoring,
+rebounding or defense. However, the evolution of game strategy has meant
+that the three traditional positions, namely—guard, forward, and center, are
+no longer sufficient to completely describe roles of players within the team.</p>
+<p>Understanding the archetypes of basketball players offers an advantage to
+teams in strategizing against their opponents, and finding and fixing weak-
+nesses in their team composition, whether by adding skills to current players
+or recruiting new talent. Usually a matter of subjective observation, espe-
+cially in non-professional leagues such as the collegiate University Athletics
+Association of the Philippines (UAAP), we undertake the task of finding
+groups of players who fit in certain positions or archetypes more objectively
+with mathematical techniques from topological data analysis (TDA).</p>
+<p>We use numerical data measuring player performance during the 84th
+season of the UAAP basketball tournament, with a high number of fea-
+tures per player corresponding to different player actions such as points, re-
+bounds, assists, steals, blocks, turnovers, fouls and shot attempts. Using this
+high-dimensional dataset as a point cloud, we use Vietoris-Rips filtration to
+connect nodes representing players from progressively longer distances, dis-
+covering the presence of hole complexes that imply groupings or clusters of
+players. We study our dataset further using the Mapper algorithm which
+applies dimensionality reduction and clustering to more prominently display
+topological features as connections between nodes representing multiple play-
+ers.</p>
+<p>We are able to identify four subgroups of players not previously indi-
+cated in the five traditional basketball positions; paint dominators, stretch
+forwards, defensive rebounders, and scrappers. Furthermore, we discover two
+hole structures of a much larger prominence than others in the mapper plot,
+associating them with missing archetypes of players. These are three-point
+plus defensive specialists, and aggressive foul-drawers, whose attributes are
+currently underrepresented within the league, and thus could make a team to
+strategize against. We conclude that TDA techniques can identify archetypes
+of players beyond the traditional classifications and can provide advantageous
+insights for basketball teams.</p>
+
+
+</article>
+</main>
+
+
+<aside class="sidebar layout__second-sidebar">
+<div class="theme-toggle">
+  <button id="theme-toggle" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+</div>
+<nav class="menu">
+<p class="title"><strong><a href="/dev/">Dev Blog</a></strong></p>
+<ul>
+</ul>
+</nav>
+<nav class="menu">
+<p class="title"><strong><a href="/research/" aria-current="page">Research</a></strong></p>
+<ul>
+<li><a href="/research/matsuda/">Research Internship Poster - Computer Vision</a></li>
+<li><a href="/research/thesis/" aria-current="page">Undergraduate Thesis - Topological Data Analysis</a></li>
+</ul>
+</nav>
+</aside><footer class="footer layout__footer mt--l">
+<p><span>© Alexander Pino</span></p>
+
+
+</footer>
+
+</div>
+</body>
+</html>

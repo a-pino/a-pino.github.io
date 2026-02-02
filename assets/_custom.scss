@@ -1,0 +1,121 @@
+// Custom styles for beige theme and header modifications
+
+// Center header contents and make menu inline
+.header.layout__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid $nearblack;
+  position: relative;
+  padding: 1rem; // Adjust padding
+}
+
+.header__site-name a {
+  color: #ffffff !important; // White color for title, matching links
+}
+
+.header__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 888px) {
+  .header__logo {
+    display: none;
+  }
+}
+
+.header__logo img {
+  height: 100%;
+  width: auto;
+}
+
+.region.header__region {
+  margin-left: 2rem;
+}
+
+// Style menu as text links evenly spaced
+.main-menu .navbar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0; // No gap, buttons touch
+  width: 100%;
+}
+
+.main-menu .navbar li {
+  margin: 0;
+  flex: 1; // Equal width
+  height: 100%; // Full height
+}
+
+.main-menu .navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: normal;
+  background: none;
+  border: none;
+  font-family: serif;
+  font-variant: small-caps;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.main-menu .navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1); // Light up on hover
+}
+
+// Dark mode styles
+body.dark {
+  --color-text-bg: #1a1a1a;
+  --color-body-bg: #2a2a2a;
+  --color-backdrop: #1a1a1a;
+  --color-header-bg: #333;
+  --color-footer-bg: #1a1a1a;
+  --color-text: #e0e0e0;
+  --color-link: #87ceeb;
+  --color-border: #444;
+}
+
+body.dark .header__site-name a,
+body.dark .main-menu .navbar a {
+  color: #e0e0e0;
+}
+
+body.dark .main-menu .navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+// Theme toggle button
+.theme-toggle {
+  margin-bottom: 1rem;
+}
+
+#theme-toggle {
+  background: var(--color-body-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+body.dark #theme-toggle {
+  background: var(--color-text-bg);
+}
+
+.main-menu .navbar a:hover {
+  color: $brand;
+}

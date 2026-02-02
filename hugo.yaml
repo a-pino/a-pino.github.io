@@ -11,3 +11,18 @@ params:
         linkedin: 'alexander-j-pino'
     logoWidth: 64
     logoHeight: 64
+    menuinheader: true
+    sidebar: true
+
+menu:
+  main:
+    - name: Home
+      url: /
+    - name: Research
+      url: /research/
+    - name: Dev
+      url: /dev/
+    - name: Resume/CV
+      url: /resume
+    - name: Contact
+      url: /contact/

@@ -3,6 +3,7 @@ title: "Research Internship Poster - Computer Vision"
 aliases:
   - /files/matsuda
 draft: false
+category: research
 ---
 
 # Instance Segmentation and Classification of Bacterial Micrographs
