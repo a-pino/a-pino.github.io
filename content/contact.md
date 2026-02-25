@@ -1,11 +1,12 @@
 ---
 title: "Contact"
+description: "Get in touch with Alexander Pino"
 ---
 
-# Contact Me
+## Contact Me
 
 Feel free to reach out!
 
-- Email: {{ .Site.Params.author.email }}
-- GitHub: [{{ .Site.Params.author.github }}](https://github.com/{{ .Site.Params.author.github }})
-- LinkedIn: [{{ .Site.Params.author.linkedin }}](https://linkedin.com/in/{{ .Site.Params.author.linkedin }})
+- **Email:** [alex.pino.salig@gmail.com](mailto:alex.pino.salig@gmail.com)
+- **GitHub:** [github.com/a-pino](https://github.com/a-pino)
+- **LinkedIn:** [linkedin.com/in/alexander-j-pino](https://linkedin.com/in/alexander-j-pino)

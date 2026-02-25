@@ -1,7 +1,6 @@
 ---
-title: "Dev Blog"
+title: "Dev"
+description: "Development projects and blog posts"
 ---
 
-# Development Blog
-
-My thoughts and projects in software development.
+Development blog and software engineering projects.

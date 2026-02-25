@@ -1,7 +1,6 @@
 ---
 title: "Research"
+description: "Research projects and publications"
 ---
 
-# Research Artifacts
-
-Here are my research projects and publications.
+Research artifacts and publications.
