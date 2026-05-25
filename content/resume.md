@@ -16,7 +16,7 @@ hidemeta: true
 ## Experience
 
 ### Accenture Industry X — Software Engineer
-*Jan 2025 – Present*
+*Jun 2025 – Present*
 
 - Owns the maintenance and deployment of **AIOHTF**, an internal hardware-testing platform extending Google's OpenHTF with an asynchronous FastAPI layer and parallel multi-plug configuration; integrated open-source YOLO and Qwen-VL models (PyTorch) for automated validation of embedded software UIs, with annotation pipelines managed in Label Studio. *(Client: major U.S. manufacturer of industrial water treatment and sanitation equipment.)*
 

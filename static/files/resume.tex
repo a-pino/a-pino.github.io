@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+
+\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=blue}
+
+\titleformat{\section}{\Large\normalfont}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+
+\pagenumbering{gobble}
+
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1}\hfill\textit{#2}\\
+  \textit{#3}\vspace{-2pt}
+  #4
+}
+
+\begin{document}
+
+\begin{center}
+{\Huge Alexander Pino}\\[4pt]
+\href{mailto:alex.pino.salig@gmail.com}{alex.pino.salig@gmail.com} \quad | \quad \href{https://linkedin.com/in/alexander-j-pino}{linkedin.com/in/alexander-j-pino} \quad | \quad \href{https://github.com/a-pino}{github.com/a-pino}
+\end{center}
+
+\section*{Experience}
+
+\entry{Software Engineer}{Jun 2025 -- Present}{Accenture Industry X}{
+\begin{itemize}
+\item Owns the maintenance and deployment of \textbf{AIOHTF}, an internal hardware-testing platform extending Google's OpenHTF with an asynchronous FastAPI layer and parallel multi-plug configuration; integrated open-source YOLO and Qwen-VL models (PyTorch) for automated validation of embedded software UIs, with annotation pipelines managed in Label Studio. \textit{(Client: major U.S. manufacturer of industrial water treatment and sanitation equipment.)}
+\item Led a five-engineer team prototyping \textbf{AIX Agent}, an agentic platform with a FastAPI backend and React frontend that enables an AI agent to autonomously manage physical industrial sites on Azure---querying embedded sensor data from SQL Server, performing root cause analysis, enforcing SOPs for issue triage and shift handoff, and generating compliance and shift-handoff reports.
+\end{itemize}
+}
+
+\entry{Research Intern}{Jul -- Sep 2024}{AIKOCorp}{
+\begin{itemize}
+\item Architected and implemented an automated privilege-escalation system combining a graph neural network (GNN) with a reinforcement learning (RL) environment (PyTorch, HuggingFace) to autonomously obtain administrator access within simulated Active Directory networks.
+\end{itemize}
+}
+
+\entry{Research Fellow}{Feb -- Jun 2024}{WhiteBox Research}{
+\begin{itemize}
+\item Designed a benchmarking framework (PyTorch, HuggingFace) evaluating frontier and open-source LLMs on their self-awareness of safety risks when answering queries related to Chemical, Biological, Radiological, and Nuclear (CBRN) topics; conducted in collaboration with interpretability research institute Apart Research.
+\end{itemize}
+}
+
+\entry{Research Intern}{Jul 2023}{FrontierLab@OsakaU}{
+\begin{itemize}
+\item Built a computer vision pipeline (PyTorch, HuggingFace) for multi-species microorganism identification in petri dish imagery, benchmarking generalist models (YOLO, ViT) against microscopy-specialized models (StarDist, Cellpose). Supervised by Hideo Matsuda, PhD and Shigeto Seno, PhD; presented research poster on July 31, 2023. \textit{(Synthetic Ecosystem Project, Institute of Science and Technology.)}
+\end{itemize}
+}
+
+\section*{Education}
+
+\entry{BS Applied Mathematics --- Specialization in Data Science}{Jun 2024}{Ateneo de Manila University}{
+\begin{itemize}
+\item \textbf{Thesis:} \textit{Using Topology to Extract Insights from UAAP Basketball Data} (with B.L. Ang and D.L. Rosario). Applied Vietoris-Rips filtration and the Mapper algorithm to UAAP player statistics, discovering four novel player subgroups (paint dominators, stretch forwards, defensive rebounders, scrappers) and identifying two underrepresented archetypes within the league.
+\end{itemize}
+}
+
+\end{document}
